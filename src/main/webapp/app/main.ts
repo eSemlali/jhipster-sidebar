@@ -29,6 +29,11 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 
 /* tslint:disable */
 
+import ClientService from '@/entities/client/client.service';
+import VehicleService from '@/entities/vehicle/vehicle.service';
+import VehicleTypeService from '@/entities/vehicle-type/vehicle-type.service';
+import VehicleColorService from '@/entities/vehicle-color/vehicle-color.service';
+import VehicleBrandService from '@/entities/vehicle-brand/vehicle-brand.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -91,6 +96,11 @@ new Vue({
     metricsService: () => new MetricsService(),
     alertService: () => alertService,
     translationService: () => translationService,
+    clientService: () => new ClientService(),
+    vehicleService: () => new VehicleService(),
+    vehicleTypeService: () => new VehicleTypeService(),
+    vehicleColorService: () => new VehicleColorService(),
+    vehicleBrandService: () => new VehicleBrandService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

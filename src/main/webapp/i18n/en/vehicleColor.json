@@ -1,0 +1,24 @@
+{
+  "jhtestApp": {
+    "vehicleColor": {
+      "home": {
+        "title": "Vehicle Colors",
+        "createLabel": "Create a new Vehicle Color",
+        "createOrEditLabel": "Create or edit a Vehicle Color",
+        "notFound": "No Vehicle Colors found"
+      },
+      "created": "A new Vehicle Color is created with identifier {{ param }}",
+      "updated": "A Vehicle Color is updated with identifier {{ param }}",
+      "deleted": "A Vehicle Color is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle Color"
+      },
+      "name": "Name",
+      "hexColor": "Hex Color",
+      "enabled": "Enabled"
+    }
+  }
+}

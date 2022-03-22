@@ -1,0 +1,23 @@
+{
+  "jhtestApp": {
+    "vehicleBrand": {
+      "home": {
+        "title": "VehicleBrands",
+        "createLabel": "Créer un nouveau Vehicle Brand",
+        "createOrEditLabel": "Créer ou éditer un Vehicle Brand",
+        "notFound": "Aucun Vehicle Brand trouvé"
+      },
+      "created": "Un nouveau Vehicle Brand a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Vehicle Brand avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Vehicle Brand avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Vehicle Brand {{ id }} ?"
+      },
+      "detail": {
+        "title": "Vehicle Brand"
+      },
+      "name": "Name",
+      "enabled": "Enabled"
+    }
+  }
+}

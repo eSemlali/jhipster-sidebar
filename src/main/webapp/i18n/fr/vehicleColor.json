@@ -1,0 +1,24 @@
+{
+  "jhtestApp": {
+    "vehicleColor": {
+      "home": {
+        "title": "VehicleColors",
+        "createLabel": "Créer un nouveau Vehicle Color",
+        "createOrEditLabel": "Créer ou éditer un Vehicle Color",
+        "notFound": "Aucun Vehicle Color trouvé"
+      },
+      "created": "Un nouveau Vehicle Color a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Vehicle Color avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Vehicle Color avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Vehicle Color {{ id }} ?"
+      },
+      "detail": {
+        "title": "Vehicle Color"
+      },
+      "name": "Name",
+      "hexColor": "Hex Color",
+      "enabled": "Enabled"
+    }
+  }
+}

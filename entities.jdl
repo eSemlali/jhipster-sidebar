@@ -1,0 +1,43 @@
+DEFAULT_MIN_LENGTH = 1
+DEFAULT_MAX_LENGTH = 500
+
+entity Client {
+  name String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  email String minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  mobile String minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  enabled Boolean required
+  created Instant required
+  lastUpdate Instant required
+}
+
+relationship OneToMany {
+  Client{vehicle} to Vehicle{client}
+}
+
+entity Vehicle {
+  plate String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  created Instant required
+  lastUpdate Instant required
+}
+
+entity VehicleType {
+  name String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  enabled Boolean required
+}
+
+entity VehicleColor {
+  name String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  hexColor String required minlength(6) maxlength(6)
+  enabled Boolean required
+}
+
+entity VehicleBrand {
+  name String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  enabled Boolean required
+}
+
+relationship ManyToOne {
+  Vehicle{vehicleType(name)} to VehicleType
+  Vehicle{vehicleColor(name)} to VehicleColor
+  Vehicle{vehicleBrand(name)} to VehicleBrand
+}
